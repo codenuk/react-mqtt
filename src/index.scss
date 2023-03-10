@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: gray;
+    min-height: 100vh;
+    padding: 60px;
+
+    .card {
+        width: 900px;
+        height: fit-content;
+        background-color: white;
+
+        .title {
+            border-bottom: 1px solid black;
+            padding: 10px 20px;
+        }
+
+        .body {
+            padding: 0px 20px 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px 40px;
+
+            .wrapperInput {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .wrapperMsg {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .msg {
+                border: 1px solid black;
+                padding: 5px;
+            }
+        }
+
+        .footer {
+            border-top: 1px solid black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
